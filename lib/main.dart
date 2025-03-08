@@ -53,7 +53,9 @@ class _MyHomePageState extends State<MyHomePage> {
       } else if (datauser[0]['level'] == 'member') {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => MemberPage()),
+          MaterialPageRoute(
+            builder: (context) => MemberPage(username: username),
+          ),
         );
       }
     }
